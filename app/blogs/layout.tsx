@@ -3,5 +3,13 @@ export default function BlogsLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <article className="prose prose-lg container mx-auto">{children}</article>;
+  return (
+    <main>
+      <div className="lg:w-3xl mx-auto">
+        <article className="prose prose-lg py-10  max-w-none  bg-white h-screen">
+          {children}
+        </article>
+      </div>
+    </main>
+  );
 }
